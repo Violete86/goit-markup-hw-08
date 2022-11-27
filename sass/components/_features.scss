@@ -1,0 +1,56 @@
+.features__list {
+    display: flex;
+    gap: 30px;
+}
+
+.features__title {
+    font-weight: 700;
+    line-height: 1.14;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: var(--h2-h3-link-color);
+}
+
+.features__item {
+    width: 270px;
+}
+
+.features__svg {
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: var(--crew-bg-color);
+    border-radius: 4px;
+}
+
+.features__svg--antenna {
+    background-image: url(../images/icons/antenna.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.features__svg--clock {
+    background-image: url(../images/icons/clock.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.features__svg--diagram {
+    background-image: url(../images/icons/diagram.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.features__svg--austronavt {
+    background-image: url(../images/icons/austronavt.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.features__text {
+    line-height: 1.71;
+}

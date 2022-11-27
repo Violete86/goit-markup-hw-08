@@ -1,0 +1,36 @@
+.service__tittle {
+  display: block;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+
+  text-align: center;
+  color: var(--h2-h3-link-color);
+}
+.service__menu {
+  display: flex;
+  gap: 30px;
+}
+
+.service__actions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
+  background-color: var(--service-acction-color);
+  color: var(--body-bg-color);
+}
+.service__title {
+  padding-top: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.service__item {
+  position: relative;
+}

@@ -1,56 +1,84 @@
 .features__list {
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
-}
-
-.features__title {
-    font-weight: 700;
-    line-height: 1.14;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    color: var(--h2-h3-link-color);
+    
 }
 
 .features__item {
+  width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
     width: 270px;
+  }
+}
+
+.features__item:not(last-child) {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+
+.features__title {
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.14;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: var(--h2-h3-link-color);
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .features__svg {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+  width: 450px;
+  height: 120px;
+  background-color: var(--crew-bg-color);
+  border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
     width: 270px;
-    height: 120px;
-    background-color: var(--crew-bg-color);
-    border-radius: 4px;
+  }
 }
 
 .features__svg--antenna {
-    background-image: url(../images/icons/antenna.svg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
+  background-image: url(../images/icons/antenna.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
 }
 
 .features__svg--clock {
-    background-image: url(../images/icons/clock.svg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
+  background-image: url(../images/icons/clock.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
 }
 
 .features__svg--diagram {
-    background-image: url(../images/icons/diagram.svg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
+  background-image: url(../images/icons/diagram.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
 }
 
 .features__svg--austronavt {
-    background-image: url(../images/icons/austronavt.svg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
+  background-image: url(../images/icons/austronavt.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
 }
 
 .features__text {
-    line-height: 1.71;
+  line-height: 1.71;
 }

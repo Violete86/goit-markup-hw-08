@@ -1,5 +1,17 @@
 .container {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  // for mobile screen from 480 > more
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  // for tablet screen from 768 > more
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  // for desktop screen from 1200 > more
+  @media screen and (min-width: 1200px) {
     width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+  }
 }

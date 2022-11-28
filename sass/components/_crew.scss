@@ -1,81 +1,106 @@
 .crew {
-    background-color: var(--crew-bg-color);
+  background-color: var(--crew-bg-color);
 }
 
 .crew-tittle {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
 
-    color: var(--h2-h3-link-color);
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--h2-h3-link-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 
 .crew-list {
+  display: block;
+  //   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
+  }
 }
 
 .crew-card {
-    background-color: var(--body-bg-color);
-    border-radius: 0 0 4px 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+  width: 450px;
+  background-color: var(--body-bg-color);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
-.crew-pic {
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+.crew-card:not(:last-child) {
+  @media screen and (max-width: 768px) {
     margin-bottom: 30px;
+  }
+}
+.crew-pic {
+  margin-bottom: 30px;
 }
 
 .crew-name {
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 
-    color: var(--h2-h3-link-color);
+  color: var(--h2-h3-link-color);
 }
 
 .crew-position {
-    margin-bottom: 16px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 
 .socials {
-    display: flex;
-    margin-bottom: 30px;
-    justify-content: center;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
 
-    gap: 10px;
+  gap: 10px;
 }
 
 .socials-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    width: 44px;
-    height: 44px;
+  width: 44px;
+  height: 44px;
 
-    color: var(--border-clients-color);
-    border-radius: 50%;
-    background-color: var(--footer-bg-socials);
-    transition-property: background-color, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--border-clients-color);
+  border-radius: 50%;
+  background-color: var(--footer-bg-socials);
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link:hover,
 .socials-link:focus {
-    background-color: var(--accent-color);
-    color: var(--body-bg-color);
+  background-color: var(--accent-color);
+  color: var(--body-bg-color);
 }
 
 .social-icon {
-    fill: currentColor;
+  fill: currentColor;
 }
